@@ -2,7 +2,11 @@
   "name": "mindfull-eating",
   "private": true,
   "type": "module",
-  "workspaces": ["client", "server", "packages/*"],
+  "workspaces": [
+    "client",
+    "server",
+    "packages/*"
+  ],
   "scripts": {
     "dev:client": "npm run dev -w client",
     "dev:server": "npm run dev -w server",
@@ -18,5 +22,10 @@
     "globals": "^17.7.0",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.62.0"
+  },
+  "overrides": {
+    "sharp-ico": {
+      "sharp": "0.35.5"
+    }
   }
 }
