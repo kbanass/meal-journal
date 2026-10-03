@@ -6,9 +6,6 @@ import svgr from "vite-plugin-svgr";
 export default defineConfig({
   server: {
     host: true,
-    // Cloudflare Quick Tunnel assigns a random subdomain on every run
-    // (e.g. random-words.trycloudflare.com) — without this Vite rejects the
-    // request as "Blocked request" (DNS rebinding protection).
     allowedHosts: [".trycloudflare.com"],
   },
   test: {
@@ -19,28 +16,74 @@ export default defineConfig({
     svgr(),
     VitePWA({
       registerType: "autoUpdate",
-      workbox: {
-        // OPFS and IndexedDB don't go through the Workbox cache — the photos
-        // (OPFS) and entries (Dexie) live outside this mechanism. This cache
-        // only covers the app files (JS/CSS/HTML), so that the app can start
-        // at all while offline.
-        globPatterns: ["**/*.{js,css,html,svg}"],
+
+      pwaAssets: {
+        config: true,
+        integration: {
+          baseUrl: "/icons/",
+        },
       },
+
+      workbox: {
+        globPatterns: ["**/*.{js,css,html,svg,png,ico}"],
+        globIgnores: ["splash-iOS/**"],
+        runtimeCaching: [
+          {
+            urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "google-fonts-cache",
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 365,
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
+        ],
+      },
+
       manifest: {
         name: "Mindful Eating",
+        id: "/",
+        start_url: "/",
         short_name: "Mindful Eating",
         description: "Eating patterns journal",
-        theme_color: "#ffffff",
+        theme_color: "#A40628",
         background_color: "#ffffff",
         display: "standalone",
-        icons: [
-          // TODO: add proper PNG icons at 192x192 and 512x512 (including one
-          // maskable) — SVG as the only icon source isn't supported
-          // everywhere when installing a PWA.
+        screenshots: [
           {
-            src: "/favicon.svg",
-            sizes: "any",
-            type: "image/svg+xml",
+            src: "/screenshots/desktop.png",
+            sizes: "2944x1904",
+            form_factor: "wide",
+          },
+          {
+            src: "/screenshots/mobile.png",
+            sizes: "750x1338",
+            form_factor: "narrow",
+          },
+        ],
+        icons: [
+          { src: "/icons/pwa-64x64.png", sizes: "64x64", type: "image/png" },
+          {
+            src: "/icons/pwa-192x192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "/icons/pwa-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "any",
+          },
+          {
+            src: "/icons/maskable-icon-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "maskable",
           },
         ],
       },

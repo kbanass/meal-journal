@@ -6,7 +6,7 @@
   background-color: var(--color-bg-white);
 
   padding-block: var(--space-m);
-  padding-bottom: var(--space-l);
+  padding-bottom: var(--space-xl);
 }
 
 .button {
