@@ -3,11 +3,11 @@
 A detailed working list — unlike the README, small things can land here.
 Not ordered by priority.
 
-## PWA / offline
+## Hosting and CI/CD
 
-- Proper PNG icons at 192×192 and 512×512 (including one maskable) — SVG as the only
-  icon source isn't supported everywhere when installing a PWA (there's already a TODO in `vite.config.ts`)
-- Actually test offline mode (network disabled, installing on a phone)
+- Deploy the production build (Cloudflare Pages is the natural fit with the existing Cloudflare stack)
+- GitHub Actions: lint, typecheck, test and build on every pull request
+- GitHub Actions: deploy `main` automatically after the checks pass
 
 ## Server / sync
 

@@ -79,7 +79,8 @@ packages/shared/   Zod schemas and types shared between client and server
 
 - [x] Save / edit / delete meals with a photo, offline
 - [x] Day and month overview (mood heatmap, trigger chart)
-- [ ] Full offline support as an installable PWA
+- [x] Installable offline-first PWA (icons, iOS splash screens, font caching)
+- [ ] Hosting and CI/CD pipeline
 - [ ] Login and data sync with the server
 
 Detailed, current backlog: [docs/BACKLOG.md](docs/BACKLOG.md)
