@@ -1,5 +1,5 @@
 :root {
-  --color-primary: hsl(342, 80%, 36%);
+  --color-primary: #a40628;
   --color-primary-lighter: hsl(342, 80%, 40%);
 
   --color-primary-disabled: hsl(342, 20%, 70%);
