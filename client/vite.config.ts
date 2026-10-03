@@ -47,13 +47,25 @@ export default defineConfig({
 
       manifest: {
         name: "Mindful Eating",
-        id: "https://mindful-eating.com",
+        id: "/",
         start_url: "/",
         short_name: "Mindful Eating",
         description: "Eating patterns journal",
         theme_color: "#A40628",
         background_color: "#ffffff",
         display: "standalone",
+        screenshots: [
+          {
+            src: "/screenshots/desktop.png",
+            sizes: "2944x1904",
+            form_factor: "wide",
+          },
+          {
+            src: "/screenshots/mobile.png",
+            sizes: "750x1338",
+            form_factor: "narrow",
+          },
+        ],
         icons: [
           { src: "/icons/pwa-64x64.png", sizes: "64x64", type: "image/png" },
           {
