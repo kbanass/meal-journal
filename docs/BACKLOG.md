@@ -30,6 +30,3 @@ Not ordered by priority.
 
 - Fine-tune the `getDayMood` algorithm (currently: ≥2 bad meals = bad day) — to be
   verified in real use, whether the threshold reflects the actual feeling well
-
-## Bugs
-- Sounds don't play when the app is launched from the home screen (installed PWA). Suspected cause: `.mp3` files in `public/sounds/` aren't in the Workbox precache (`globPatterns` doesn't include `mp3`), so they fail offline. To verify: check Cache Storage and the Network tab in the installed app, and check whether it also fails online.
