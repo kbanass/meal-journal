@@ -1,5 +1,7 @@
 # MealJournal
 
+**🚀 Live app: [meal-journal-dxl.pages.dev](https://meal-journal-dxl.pages.dev)** — open it on your phone and add it to your home screen.
+
 An offline-first PWA for logging eating patterns — a photo of the meal, the reason you
 reached for food, and how you felt about it. It doesn't count calories — it shows patterns
 over time: when you eat out of boredom, when you eat your stress, and when it's simply
@@ -80,7 +82,7 @@ packages/shared/   Zod schemas and types shared between client and server
 - [x] Save / edit / delete meals with a photo, offline
 - [x] Day and month overview (mood heatmap, trigger chart)
 - [x] Installable offline-first PWA (icons, iOS splash screens, font caching)
-- [ ] Hosting and CI/CD pipeline
+- [x] Hosting on Cloudflare Pages with CI/CD (https://meal-journal-dxl.pages.dev)
 - [ ] Login and data sync with the server
 
 Detailed, current backlog: [docs/BACKLOG.md](docs/BACKLOG.md)

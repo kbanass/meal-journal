@@ -3,12 +3,6 @@
 A detailed working list — unlike the README, small things can land here.
 Not ordered by priority.
 
-## Hosting and CI/CD
-
-- Deploy the production build (Cloudflare Pages is the natural fit with the existing Cloudflare stack)
-- GitHub Actions: lint, typecheck, test and build on every pull request
-- GitHub Actions: deploy `main` automatically after the checks pass
-
 ## Server / sync
 
 - `server/` is only a skeleton for now (`/health` + defined D1/R2 bindings, no logic)
