@@ -46,10 +46,10 @@ export default defineConfig({
       },
 
       manifest: {
-        name: "Mindful Eating",
+        name: "MealJournal",
         id: "/",
         start_url: "/",
-        short_name: "Mindful Eating",
+        short_name: "MealJournal",
         description: "Eating patterns journal",
         theme_color: "#A40628",
         background_color: "#ffffff",

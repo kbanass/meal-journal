@@ -1,25 +1,25 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "mindful-eating-api",
+  "name": "meal-journal-api",
   "main": "src/index.ts",
   "compatibility_date": "2026-07-30",
   "compatibility_flags": ["nodejs_compat"],
 
-  // TODO: run `wrangler d1 create mindful-eating-db` and paste the returned
+  // TODO: run `wrangler d1 create meal-journal-db` and paste the returned
   // database_id below.
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "mindful-eating-db",
-      "database_id": "REPLACE_WITH_D1_DATABASE_ID"
-    }
+      "database_name": "meal-journal-db",
+      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+    },
   ],
 
-  // TODO: run `wrangler r2 bucket create mindful-eating-photos`.
+  // TODO: run `wrangler r2 bucket create meal-journal-photos`.
   "r2_buckets": [
     {
       "binding": "PHOTOS",
-      "bucket_name": "mindful-eating-photos"
-    }
-  ]
+      "bucket_name": "meal-journal-photos",
+    },
+  ],
 }

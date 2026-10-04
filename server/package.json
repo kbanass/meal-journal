@@ -9,8 +9,8 @@
     "typecheck": "tsc --noEmit",
     "cf-typegen": "wrangler types",
     "db:generate": "drizzle-kit generate",
-    "db:migrate:local": "wrangler d1 migrations apply mindful-eating-db --local",
-    "db:migrate:remote": "wrangler d1 migrations apply mindful-eating-db --remote"
+    "db:migrate:local": "wrangler d1 migrations apply meal-journal-db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply meal-journal-db --remote"
   },
   "dependencies": {
     "drizzle-orm": "^0.45.2",

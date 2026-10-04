@@ -62,9 +62,9 @@ npm -w client run test
 
 ```bash
 cd server
-npx wrangler d1 create mindful-eating-db       # paste the database_id into wrangler.jsonc
-npx wrangler r2 bucket create mindful-eating-photos
-npx wrangler d1 migrations apply mindful-eating-db --local
+npx wrangler d1 create meal-journal-db       # paste the database_id into wrangler.jsonc
+npx wrangler r2 bucket create meal-journal-photos
+npx wrangler d1 migrations apply meal-journal-db --local
 ```
 
 ## Monorepo structure
