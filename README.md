@@ -83,7 +83,16 @@ packages/shared/   Zod schemas and types shared between client and server
 - [x] Day and month overview (mood heatmap, trigger chart)
 - [x] Installable offline-first PWA (icons, iOS splash screens, font caching)
 - [x] Hosting on Cloudflare Pages with CI/CD (https://meal-journal-dxl.pages.dev)
-- [ ] Login and data sync with the server
+- [ ] Install-aware routing: browser shows the home page and install guide, installed app shows login and the app
+- [ ] Server foundation: D1 schema for meals and a validated meals API
+- [ ] Authentication decision documented (method, token strategy)
+- [ ] Server authentication: registration, login, protected endpoints
+- [ ] Login page in the client
+- [ ] Sync: upload meal metadata from the offline queue
+- [ ] Sync: upload photos to R2 under their content hash
+- [ ] Sync: download meals on a second device
+- [ ] Sync: deletions propagate via tombstones
+- [ ] Sync: conflict resolution (last write wins, documented)
 
 Detailed, current backlog: [docs/BACKLOG.md](docs/BACKLOG.md)
 
