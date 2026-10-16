@@ -6,6 +6,7 @@ import Profile from "../../tabs/Profile";
 
 import type { Tabs } from "../../components/Nav/types";
 import { Nav } from "../../components/Nav/Nav";
+import { Logo } from "../../components/Logo/Logo";
 
 import styles from "./Main.module.css";
 
@@ -18,7 +19,7 @@ function Main() {
 
   return (
     <div className={styles.mainWrapper}>
-      <header className={styles.logo}>
+      <header>
         <Logo />
       </header>
       <main className={styles.main}>
@@ -36,12 +37,3 @@ function Main() {
 }
 
 export default Main;
-
-function Logo() {
-  return (
-    <div className={styles.logo}>
-      <span>Meal</span>
-      <span>Journal</span>
-    </div>
-  );
-}
