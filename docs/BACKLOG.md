@@ -20,6 +20,14 @@ Not ordered by priority.
 - Tests for `compressImage` — requires an environment with DOM/Canvas (Vitest Browser Mode);
   the current `environment: "node"` in the test config doesn't support that
 
+## UI
+
+- Migrate the UI to Framework7. Deliberately scheduled for **after** the whole auth +
+  sync arc is functionally done, not before and not mixed in with it — two unfamiliar
+  big things (backend auth/sync, and a new UI framework) at once make it hard to tell
+  which one a bug belongs to. Expect to re-skin the login/sync screens once more as
+  part of this migration; that's an accepted cost of not multitasking.
+
 ## Small things
 
 - Fine-tune the `getDayMood` algorithm (currently: ≥2 bad meals = bad day) — to be
