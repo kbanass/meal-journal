@@ -7,22 +7,6 @@
   align-items: center;
 }
 
-.logo {
-  width: 100%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  color: var(--color-text-primary);
-  padding-block: var(--space-xs);
-  padding-left: var(--space-s);
-
-  font-weight: 800;
-  font-size: var(--font-size-xxl);
-}
-.logo span:first-child {
-  color: #a4123f;
-}
-
 .main {
   position: relative;
   width: 100%;
