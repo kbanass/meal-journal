@@ -118,3 +118,5 @@ concepts I got stuck on.
 ## Author
 
 **Kacper Banaś** · [LinkedIn](https://www.linkedin.com/in/kacper-bana%C5%9B-dev) · [GitHub](https://github.com/kbanass) · [kacper.banas.dev@gmail.com](mailto:kacper.banas.dev@gmail.com)
+
+I'm looking for my first job as a junior developer.
