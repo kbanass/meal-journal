@@ -83,7 +83,7 @@ packages/shared/   Zod schemas and types shared between client and server
 - [x] Day and month overview (mood heatmap, trigger chart)
 - [x] Installable offline-first PWA (icons, iOS splash screens, font caching)
 - [x] Hosting on Cloudflare Pages with CI/CD (https://meal-journal-dxl.pages.dev)
-- [ ] Install-aware routing: browser shows the home page and install guide, installed app shows login and the app
+- [x] Install-aware routing: browser shows the home page and install guide, installed app shows login and the app
 - [ ] Server foundation: D1 schema for meals and a validated meals API
 - [ ] Authentication decision documented (method, token strategy)
 - [ ] Server authentication: registration, login, protected endpoints
