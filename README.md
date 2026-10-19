@@ -114,3 +114,7 @@ me in code I wrote myself. When I get stuck, I get hints, not a ready-made solut
 structure), code review of my code, architecture discussion (naming, patterns, help
 understanding different approaches), documentation (including this README) and explaining
 concepts I got stuck on.
+
+## Author
+
+**Kacper Banaś** · [LinkedIn](https://www.linkedin.com/in/kacper-bana%C5%9B-dev) · [GitHub](https://github.com/kbanass) · [kacper.banas.dev@gmail.com](mailto:kacper.banas.dev@gmail.com)
